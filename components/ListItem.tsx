@@ -1,26 +1,37 @@
 "use client";
 
-import { useRouter } from "next/navigation";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
+import { FaPlay } from "react-icons/fa";
+
+import useAuthModal from "@/hooks/useAuthModal";
+import { useUser } from "@/hooks/useUser";
+
 interface ListItemProps {
-    image: string;
-    name: string;
-    href: string;
-  }
+  image: string;
+  name: string;
+  href: string;
+}
 
 const ListItem: React.FC<ListItemProps> = ({
-    image,
-    name,
-    href,
+  image,
+  name,
+  href,
 }) => {
-    const router = useRouter();
+  const router = useRouter();
+  const authModal = useAuthModal();
+  const { user } = useUser();
+  
+  const onClick = () => {
+    if (!user) {
+      return authModal.onOpen();
+    }
 
-    const onClick = () => {
-        router.push(href);
-      }
+    router.push(href);
+  };
 
-return (
-<button
+  return ( 
+    <button
       onClick={onClick}
       className="
         relative 
@@ -37,7 +48,7 @@ return (
         pr-4
       "
     >
-         <div className="relative min-h-[64px] min-w-[64px]">
+      <div className="relative min-h-[64px] min-w-[64px]">
         <Image
           className="object-cover"
           src={image}
@@ -45,8 +56,30 @@ return (
           alt="Image"
         />
       </div>
+      <p className="font-medium truncate py-5">
+        {name}
+      </p>
+      <div 
+        className="
+          absolute 
+          transition 
+          opacity-0 
+          rounded-full 
+          flex 
+          items-center 
+          justify-center 
+          bg-green-500 
+          p-4 
+          drop-shadow-md 
+          right-5
+          group-hover:opacity-100 
+          hover:scale-110
+        "
+      >
+        <FaPlay className="text-black" />
+      </div>
     </button>
-
-);
+   );
 }
+ 
 export default ListItem;
