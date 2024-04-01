@@ -2,6 +2,12 @@
 
 This is a full-stack Spotify website, utilizing Next.js, React, Tailwind CSS, Supabase, PostgreSQL, and Stripe. It offers music playback, song uploading, user authentication, playlist management, as well as subscription purchase services, Additionally, it features user-friendly navigation, appealing aesthetics, and automatic webpage responsiveness.
 
+**Premium account**
+
+Email:zhiyunchen60@gmail.com
+
+Password:123456
+
 # UI Overview
 
 Here's a glimpse of the Website, highlighting its features and aesthetics.
