@@ -98,7 +98,7 @@ Contributions to this project are always welcome. Here's how you can help enhanc
 Start by forking the project repository, then clone your fork using:
 
 ```
-git clone https://github.com/EthanCh30/Spotify-Clone.git
+git clone https://github.com/EthanCh30/MusicGo.git
 ```
 
 ### Create a New Branch
