@@ -12,9 +12,9 @@ Password:123456
 
 Here's a glimpse of the Website, highlighting its features and aesthetics.
 
-![Image text](https://github.com/EthanCh30/img-store/blob/master/img-storage/Spotify1.png)
+![Image text](https://github.com/EthanCh30/img-store/blob/master/MusicGo1.png)
 
-![Image text](https://github.com/EthanCh30/img-store/blob/master/img-storage/Spotify2.png)
+![Image text](https://github.com/EthanCh30/img-store/blob/master/MusicGo2.png)
 
 Main view of the Website
 
