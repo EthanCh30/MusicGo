@@ -1,6 +1,6 @@
 # Project Description
 
-This is a full-stack Spotify website, utilizing Next.js, React, Tailwind CSS, Supabase, PostgreSQL, and Stripe. It offers music playback, song uploading, user authentication, playlist management, as well as subscription purchase services, Additionally, it features user-friendly navigation, appealing aesthetics, and automatic webpage responsiveness.
+This is a full-stack Music Player website, utilizing Next.js, React, Tailwind CSS, Supabase, PostgreSQL, and Stripe. It offers music playback, song uploading, user authentication, playlist management, as well as subscription purchase services, Additionally, it features user-friendly navigation, appealing aesthetics, and automatic webpage responsiveness.
 
 **Premium account**
 
